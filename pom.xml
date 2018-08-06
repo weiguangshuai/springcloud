@@ -15,6 +15,7 @@
         <module>service-discovery2</module>
         <module>ribbon-service</module>
         <module>service-feign</module>
+        <module>service-zuul</module>
     </modules>
 
     <parent>
