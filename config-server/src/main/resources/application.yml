@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/weiguangshuai/springcloud
+          uri: https://github.com/weiguangshuai/springcloud.git
           search-paths: respo
           username:
           password:
