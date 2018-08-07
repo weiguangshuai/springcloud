@@ -1,0 +1,16 @@
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/weiguangshuai/springcloud
+          search-paths: respo
+          username:
+          password:
+      label: master
+server:
+  port: 6666
+
