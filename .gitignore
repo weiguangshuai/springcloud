@@ -11,11 +11,11 @@
 #maven ingore
 /ribbon-service/target/
 /ribbon-service/out/
-/service-discovery/target
-/service-discovery/out
-/service-discovery2/target
-/service-discovery2/out
-/service-world/target
-/service-world/out
-/service—hello/target
-/service—hello/out
+/service-discovery/target/
+/service-discovery/out/
+/service-discovery2/target/
+/service-discovery2/out/
+/service-world/target/
+/service-world/out/
+/service—hello/target/
+/service—hello/out/

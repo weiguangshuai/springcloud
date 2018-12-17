@@ -6,7 +6,7 @@
 #  instance:
 #    hostname: localhost
 #  client:
-##  设置该服务部注册到注册中心去
+##  设置该服务部不注册到注册中心去
 #    register-with-eureka: false
 #    fetch-registry: false
 #    serviceUrl:
@@ -18,10 +18,11 @@ server:
   port: 1112
 eureka:
   instance:
-    hostname: eureka-server2
+    hostname: localhost
+    prefer-ip-address: true
   client:
     serviceUrl:
-      defaultZone: http://eureka-server1:1111/eureka/
+      defaultZone: http://localhost:1111/eureka/,http://localhost:1112/eureka/
 spring:
   application:
     name: eureka-server2
