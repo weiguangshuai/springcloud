@@ -1,5 +1,6 @@
 package controller;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +17,11 @@ public class HelloController {
     }
 
     @RequestMapping(value = "/home", method = RequestMethod.GET)
-    public String home() {
-        return "home2";
+    public ResponseEntity home() {
+        User user = new User();
+        user.setAge(22);
+        user.setPassword("weigs");
+        user.setUsername("weigs");
+        return ResponseEntity.ok(user);
     }
 }
