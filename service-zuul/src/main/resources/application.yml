@@ -7,12 +7,13 @@ server:
 spring:
   application:
     name: service-zuul
+
+# serviceId区分大小写，要和注册到eureka上的一样
 zuul:
   routes:
     api-a:
       path: /api-a/**
-      serviceId: service-ribbon
+      serviceId: SERVICE-RIBBON
     api-b:
       path: /api-b/**
-      serviceId: service-feigh
-
+      serviceId: SERVICE-FEIGN

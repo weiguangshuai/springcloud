@@ -15,7 +15,7 @@
         <module>ribbon-service</module>
         <module>service-feign</module>
         <module>service-zuul</module>
-        <module>config-server</module>
+        <module>service-config</module>
     </modules>
 
     <parent>
