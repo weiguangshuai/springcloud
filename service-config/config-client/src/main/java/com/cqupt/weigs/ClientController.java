@@ -10,18 +10,19 @@ import org.springframework.web.bind.annotation.RestController;
  * <p/>
  * Description
  * <p/>
- * <b>Creation Time:</b> 2018/12/24 14:42.
+ * <b>Creation Time:</b> 2018/12/24 18:05.
  *
  * @author weigs
  * @since spring-cloud-test 2.0.0
  */
 @RestController
 public class ClientController {
+
     @Value("${foo}")
     private String foo;
 
-    @RequestMapping(value = "/config", method = RequestMethod.GET)
-    public String config() {
+    @RequestMapping(value = "/client", method = RequestMethod.GET)
+    public String client() {
         return foo;
     }
 }
