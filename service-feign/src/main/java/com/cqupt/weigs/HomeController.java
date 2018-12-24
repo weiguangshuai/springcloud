@@ -19,4 +19,9 @@ public class HomeController {
     public String home() {
         return schedualServiceHi.sayHiFromOneClient();
     }
+
+    @GetMapping(value = "/hello")
+    public String hello() {
+        return schedualServiceHi.sayHello();
+    }
 }

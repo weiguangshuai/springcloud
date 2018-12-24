@@ -8,3 +8,14 @@ spring:
   application:
     name: service-feign
 
+#打开feign自带的hystrix熔断器
+feign:
+  hystrix:
+    enabled: true
+
+#当每次feign访问都超时，所以我们要把超时时间设置长点
+#feign:
+#  client:
+#    config:
+#      default:
+#        connectTimeout: 1000
