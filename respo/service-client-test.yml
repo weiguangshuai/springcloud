@@ -1,0 +1,4 @@
+database:
+  url: http://localhost:8080/test
+  username: weigs
+  password: weigs

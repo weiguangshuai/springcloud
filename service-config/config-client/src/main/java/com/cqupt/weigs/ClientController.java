@@ -15,10 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
  * @author weigs
  * @since spring-cloud-test 2.0.0
  */
+
 @RestController
 public class ClientController {
 
-    @Value("${foo}")
+    @Value("${database.username}")
     private String foo;
 
     @RequestMapping(value = "/client", method = RequestMethod.GET)
