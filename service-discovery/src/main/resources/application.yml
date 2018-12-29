@@ -16,6 +16,12 @@
 ##部署注册中心的集群
 server:
   port: 1111
+  # https请求方式
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-password: 123456
+    key-store-type: PKCS12
+    key-alias: tomcat
 eureka:
   instance:
     hostname: localhost
