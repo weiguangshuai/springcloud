@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ClientController {
 
-    @Value("${database.username}")
+    @Value("${abc}")
     private String username;
 
     @RequestMapping(value = "/client", method = RequestMethod.GET)

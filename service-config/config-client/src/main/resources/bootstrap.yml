@@ -24,6 +24,7 @@ spring:
         enabled: true
         service-id: CONFIG-SERVER
       label: master
+  #      name: application
   application:
     name: config-client
 eureka:
