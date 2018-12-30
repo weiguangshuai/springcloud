@@ -1,6 +1,6 @@
 spring:
-  rabbitmq:
-    addresses: 192.168.108.9
-    port: 5672
-    username: weigs
-    password: 123456
+rabbitmq:
+  addresses: 192.168.108.9
+  port: 5672
+  username: weigs
+  password: 123456
