@@ -3,7 +3,7 @@ spring:
     name: rabbitmq-service
   cloud:
     config:
-      profile: test
+      profile: local
       discovery:
         enabled: true
         service-id: CONFIG-SERVER
