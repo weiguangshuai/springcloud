@@ -23,6 +23,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:1111/eureka/,http://localhost:1112/eureka/
+# 设置成false，关闭自我保护
+  server:
+    enable-self-preservation: false
 spring:
   application:
     name: eureka-server2
