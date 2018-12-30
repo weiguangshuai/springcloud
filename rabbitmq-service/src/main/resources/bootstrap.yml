@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: rabbitmq-service
+  cloud:
+    config:
+      profile: test
+      discovery:
+        enabled: true
+        service-id: CONFIG-SERVER
+      label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/,http://localhost:1112/eureka/
+server:
+  port: 1118

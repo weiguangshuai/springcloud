@@ -16,6 +16,7 @@
         <module>service-feign</module>
         <module>service-zuul</module>
         <module>service-config</module>
+        <module>rabbitmq-service</module>
     </modules>
 
     <parent>

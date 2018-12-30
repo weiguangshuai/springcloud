@@ -1,6 +1,3 @@
-database:
-  url: http://localhost:8080/test
-  username: weigs
-  password: weigs
-abc:
-  weigs
+spring:
+  rabbitmq:
+    addresses: 192.168.108.9

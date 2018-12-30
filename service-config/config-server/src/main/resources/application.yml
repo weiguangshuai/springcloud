@@ -11,7 +11,7 @@ spring:
           password: weishuai19961023
       label: master
 server:
-  port: 1116
+  port: ${random.int[1000,1999]}
 eureka:
   client:
     serviceUrl:

@@ -5,19 +5,20 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
- * <b><code>ConfigClientApplication</code></b>
+ * <b><code>RabbitMQApplication</code></b>
  * <p/>
  * Description
  * <p/>
- * <b>Creation Time:</b> 2018/12/24 14:13.
+ * <b>Creation Time:</b> 2018/12/31 0:07.
  *
  * @author weigs
  * @since spring-cloud-test 2.0.0
  */
 @SpringBootApplication
 @EnableEurekaClient
-public class ConfigClientApplication {
+
+public class RabbitMQApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ConfigClientApplication.class, args);
+        SpringApplication.run(RabbitMQApplication.class, args);
     }
 }
