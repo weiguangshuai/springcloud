@@ -18,7 +18,6 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class HelloController {
 
-
     private final static Logger log = LoggerFactory.getLogger(HelloController.class);
 
     @Autowired
@@ -29,8 +28,9 @@ public class HelloController {
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     @HystrixCommand(fallbackMethod = "helloError")
-    public String hello() {
+    public String hello() throws InterruptedException {
         log.info("request from port: {}", port);
+        Thread.sleep(100000);
         return "hello, I am from port: " + port;
     }
 

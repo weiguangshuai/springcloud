@@ -14,3 +14,12 @@ eureka:
 ##实例名命名默认规则中加入了instance-id，可以在这里加上
 #  instance:
 #    instance-id: ${spring.application.name}:${random.int}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"

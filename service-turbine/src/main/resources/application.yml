@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: service-turbine
+server:
+  port: 1121
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/,http://localhost:1112/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+turbine:
+  app-config: service-hi,service-turbine
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")

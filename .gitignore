@@ -19,3 +19,6 @@
 /service-world/out/
 /service—hello/target/
 /service—hello/out/
+
+**/target
+**/out/
